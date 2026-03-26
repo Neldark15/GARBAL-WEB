@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   description:
     "Fabricamos y distribuimos botas y calzado de PVC con estándares de calidad internacional. Más de 60 años de experiencia en El Salvador.",
   keywords: "botas PVC, calzado industrial, botas agrícolas, Garbal, El Salvador, botas de trabajo",
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: "Garbal | Líderes en Durabilidad",
     description: "Fabricamos y distribuimos botas y calzado de PVC con estándares de calidad internacional.",
