@@ -103,6 +103,22 @@ body {
   pointer-events: none;
 }
 
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(204, 25, 57, 0.2);
+  box-shadow: 0 20px 48px rgba(204, 25, 57, 0.1), 0 8px 24px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-8px);
+}
+
 /* Gradient overlay */
 .gradient-overlay {
   background: linear-gradient(to bottom, transparent 0%, rgba(15, 23, 42, 0.8) 100%);

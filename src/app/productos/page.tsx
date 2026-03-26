@@ -124,7 +124,7 @@ function ProductosContent() {
               {filtered.map((product) => (
                 <motion.div key={product.id} variants={fadeUp} layout>
                   <Link href={`/productos/${product.slug}`}>
-                    <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-primary/20 card-tilt card-glow product-shimmer">
+                    <div className="group glass-card rounded-2xl overflow-hidden card-tilt product-shimmer">
                       <div className="relative h-72 img-zoom product-bg">
                         <Image
                           src={product.image}
