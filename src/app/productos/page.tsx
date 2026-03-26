@@ -125,12 +125,14 @@ function ProductosContent() {
                 <motion.div key={product.id} variants={fadeUp} layout>
                   <Link href={`/productos/${product.slug}`}>
                     <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-primary/20 card-tilt card-glow product-shimmer">
-                      <div className="relative h-64 img-zoom product-bg">
+                      <div className="relative h-72 img-zoom product-bg">
                         <Image
                           src={product.image}
                           alt={product.name}
                           fill
-                          className="object-contain p-6 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500"
+                          quality={95}
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-contain p-4 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500"
                         />
                         <div className="shimmer-overlay absolute inset-0 z-10" />
                         <div className="absolute top-3 left-3 z-20">

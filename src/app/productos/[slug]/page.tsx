@@ -66,7 +66,9 @@ export default function ProductDetailPage() {
                   src={gallery[activeImage]}
                   alt={product.name}
                   fill
-                  className="object-contain p-8"
+                  quality={95}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-contain p-6"
                 />
               </div>
               {gallery.length > 1 && (
@@ -79,7 +81,7 @@ export default function ProductDetailPage() {
                         i === activeImage ? "border-primary" : "border-gray-200"
                       }`}
                     >
-                      <Image src={img} alt="" fill className="object-contain p-1" />
+                      <Image src={img} alt="" fill quality={85} className="object-contain p-1" />
                     </button>
                   ))}
                 </div>
@@ -156,12 +158,13 @@ export default function ProductDetailPage() {
               {related.map((p) => (
                 <Link key={p.id} href={`/productos/${p.slug}`}>
                   <div className="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all card-tilt">
-                    <div className="relative h-48 bg-gray-50">
+                    <div className="relative h-52 bg-gray-50">
                       <Image
                         src={p.image}
                         alt={p.name}
                         fill
-                        className="object-contain p-4"
+                        quality={90}
+                        className="object-contain p-3"
                       />
                     </div>
                     <div className="p-4">

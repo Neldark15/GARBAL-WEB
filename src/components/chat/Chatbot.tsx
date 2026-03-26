@@ -100,8 +100,8 @@ export default function Chatbot() {
             {/* Header */}
             <div className="bg-primary text-white p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white/20">
-                  <Image src="/images/logo/garbal-logo.png" alt="Garbal" width={40} height={40} className="w-full h-full object-cover" />
+                <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white/20 bg-white flex items-center justify-center p-1">
+                  <Image src="/images/logo/garbal-logo.png" alt="Garbal" width={32} height={32} className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <p className="font-semibold text-sm">Asistente Garbal</p>

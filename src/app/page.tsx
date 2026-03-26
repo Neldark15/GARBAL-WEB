@@ -162,8 +162,8 @@ export default function Home() {
               <motion.div key={product.id} variants={fadeUp}>
                 <Link href={`/productos/${product.slug}`}>
                   <div className="group bg-white rounded-2xl overflow-hidden shadow-md card-tilt card-glow product-shimmer">
-                    <div className="relative h-72 img-zoom product-bg">
-                      <Image src={product.image} alt={product.name} fill className="object-contain p-6 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500" />
+                    <div className="relative h-80 img-zoom product-bg">
+                      <Image src={product.image} alt={product.name} fill quality={95} sizes="(max-width: 768px) 100vw, 50vw" className="object-contain p-4 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500" />
                       <div className="shimmer-overlay absolute inset-0 z-10" />
                     </div>
                     <div className="p-6">
