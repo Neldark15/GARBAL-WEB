@@ -65,13 +65,13 @@ export default function Chatbot() {
               <HiX className="w-6 h-6 text-white" />
             </div>
           ) : (
-            <div className="w-full h-full rounded-full overflow-hidden ring-2 ring-white shadow-lg">
+            <div className="w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 shadow-lg bg-white flex items-center justify-center p-1.5">
               <Image
                 src="/images/logo/garbal-logo.png"
                 alt="Chat Garbal"
-                width={56}
-                height={56}
-                className="w-full h-full object-cover"
+                width={40}
+                height={40}
+                className="w-full h-full object-contain"
               />
             </div>
           )}
