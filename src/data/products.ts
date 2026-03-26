@@ -72,37 +72,25 @@ export const products: Product[] = [
   },
   {
     id: "ind-03",
-    name: "Bota Sanitaria Blanca Roja",
+    name: "Bota Sanitaria Blanca Roja - Nitrilo",
     slug: "bota-sanitaria-blanca-roja",
     category: "industrial",
     description:
-      "Bota blanca con suela roja diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
-    shortDescription: "Para industria alimentaria y áreas sanitarias",
-    specs: { cana: "PVC", suela: "PVC", uso: "Sanitario / Alimentario" },
+      "Bota blanca con suela roja fabricada en Nitrilo, material superior resistente a aceites, grasas y solventes. Diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
+    shortDescription: "Nitrilo: resistencia a aceites y solventes para uso sanitario",
+    specs: { cana: "Nitrilo", suela: "Nitrilo", uso: "Sanitario / Alimentario / Petroquímico" },
     image: "/images/products/industrial/bota-blanca-roja.png",
     featured: true,
   },
   {
-    id: "ind-04",
+    id: "ind-05",
     name: "Bota Sanitaria Blanca Amarilla",
     slug: "bota-sanitaria-blanca-amarilla",
     category: "industrial",
     description:
-      "Bota blanca con suela amarilla para entornos sanitarios y de procesamiento de alimentos. Material antibacteriano y resistente a químicos de limpieza.",
+      "Bota blanca con suela amarilla para entornos sanitarios y de procesamiento de alimentos. Material antibacteriano y resistente a químicos de limpieza. Ideal para laboratorios y áreas de higiene industrial.",
     shortDescription: "Sanitaria con suela amarilla antideslizante",
     specs: { cana: "PVC", suela: "PVC", uso: "Sanitario / Laboratorio" },
-    image: "/images/products/industrial/bota-blanca-amarilla.png",
-    featured: false,
-  },
-  {
-    id: "ind-05",
-    name: "Super Montana Industrial Nítrelo",
-    slug: "super-montana-industrial-nitrelo",
-    category: "industrial",
-    description:
-      "Bota premium con suela de Nítrelo, material superior que ofrece mayor resistencia a aceites, grasas y solventes. La elección profesional para industrias que demandan el máximo nivel de protección.",
-    shortDescription: "Suela Nítrelo: máxima resistencia a aceites y solventes",
-    specs: { cana: "PVC", suela: "Nítrelo", uso: "Industrial / Petroquímico" },
     image: "/images/products/industrial/super-montana-industrial-nitrelo.png",
     gallery: [
       "/images/products/industrial/super-montana-industrial-nitrelo.png",
@@ -134,14 +122,10 @@ export const products: Product[] = [
     slug: "dakota",
     category: "agricola",
     description:
-      "Bota agrícola Dakota de media caña, resistente y confiable. Perfecta para ganadería, agricultura y trabajo en terrenos irregulares. Su suela con agarre especial evita resbalones en superficies mojadas.",
+      "Bota agrícola Dakota de media caña, totalmente negra, resistente y confiable. Perfecta para ganadería, agricultura y trabajo en terrenos irregulares. Su suela con agarre especial evita resbalones en superficies mojadas.",
     shortDescription: "Media caña resistente para ganadería y agricultura",
     specs: { cana: "PVC", suela: "PVC", uso: "Agrícola / Ganadería" },
-    image: "/images/products/agricola/dakota-hq.png",
-    gallery: [
-      "/images/products/agricola/dakota-hq.png",
-      "/images/products/agricola/dakota.png",
-    ],
+    image: "/images/products/agricola/dakota.png",
     featured: true,
   },
   {
@@ -156,6 +140,7 @@ export const products: Product[] = [
     image: "/images/products/agricola/super-montana-beige.png",
     gallery: [
       "/images/products/agricola/super-montana-beige.png",
+      "/images/products/agricola/dakota-hq.png",
       "/images/products/agricola/montana-beige.png",
       "/images/products/agricola/super-montana-agricola.png",
     ],
