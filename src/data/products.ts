@@ -76,9 +76,9 @@ export const products: Product[] = [
     slug: "bota-sanitaria-blanca-roja",
     category: "industrial",
     description:
-      "Bota blanca con suela roja fabricada en Nitrilo, material superior resistente a aceites, grasas y solventes. Diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
-    shortDescription: "Nitrilo: resistencia a aceites y solventes para uso sanitario",
-    specs: { cana: "Nitrilo", suela: "Nitrilo", uso: "Sanitario / Alimentario / Petroquímico" },
+      "Bota blanca de caña PVC con suela de Nitrilo roja, resistente a aceites, grasas y solventes. Diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
+    shortDescription: "Caña PVC + suela Nitrilo: resistencia superior para uso sanitario",
+    specs: { cana: "PVC", suela: "Nitrilo", uso: "Sanitario / Alimentario / Petroquímico" },
     image: "/images/products/industrial/bota-blanca-roja.png",
     featured: true,
   },
