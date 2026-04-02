@@ -1,4 +1,4 @@
-export type ProductCategory = "industrial" | "agricola" | "otros";
+export type ProductCategory = "industrial" | "premium" | "agricola" | "otros";
 
 export interface Product {
   id: string;
@@ -22,6 +22,11 @@ export const categories: { id: ProductCategory; name: string; description: strin
     id: "industrial",
     name: "Botas Industriales",
     description: "Protección y resistencia para entornos de trabajo exigentes",
+  },
+  {
+    id: "premium",
+    name: "Botas Premium",
+    description: "Línea premium con materiales especializados de alto rendimiento",
   },
   {
     id: "agricola",
@@ -72,15 +77,39 @@ export const products: Product[] = [
   },
   {
     id: "ind-03",
-    name: "Bota Sanitaria Blanca Roja - Nitrilo",
+    name: "Super Montana Industrial Blanca Roja",
     slug: "bota-sanitaria-blanca-roja",
-    category: "industrial",
+    category: "premium",
     description:
       "Bota blanca de caña PVC con suela de Nitrilo roja, resistente a aceites, grasas y solventes. Diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
     shortDescription: "Caña PVC + suela Nitrilo: resistencia superior para uso sanitario",
     specs: { cana: "PVC", suela: "Nitrilo", uso: "Sanitario / Alimentario" },
     image: "/images/products/industrial/bota-blanca-roja.png",
     featured: true,
+  },
+  {
+    id: "prm-01",
+    name: "Super Montana Industrial Verde Roja",
+    slug: "super-montana-verde-roja",
+    category: "premium",
+    description:
+      "Bota premium de la línea Super Montana Industrial con caña verde y suela roja de alto rendimiento. Diseñada para entornos industriales que requieren máxima visibilidad y resistencia superior. Materiales especializados para condiciones exigentes.",
+    shortDescription: "Caña verde + suela roja de alto rendimiento industrial",
+    specs: { cana: "PVC", suela: "PVC", uso: "Industrial / Premium" },
+    image: "/images/products/industrial/super-montana-verde-roja.png",
+    featured: false,
+  },
+  {
+    id: "prm-02",
+    name: "Super Montana Industrial Blanca Azul",
+    slug: "super-montana-blanca-azul",
+    category: "premium",
+    description:
+      "Bota premium de la línea Super Montana Industrial con caña blanca y suela azul. Ideal para industrias alimentarias, laboratorios y áreas sanitarias que requieren identificación visual del personal. Fácil de limpiar y desinfectar.",
+    shortDescription: "Caña blanca + suela azul para uso sanitario e industrial",
+    specs: { cana: "PVC", suela: "PVC", uso: "Sanitario / Industrial" },
+    image: "/images/products/industrial/super-montana-blanca-azul.png",
+    featured: false,
   },
   {
     id: "ind-05",

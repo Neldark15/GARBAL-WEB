@@ -21,7 +21,7 @@ function ProductosContent() {
 
   useEffect(() => {
     const cat = searchParams.get("cat");
-    if (cat && ["industrial", "agricola", "otros"].includes(cat)) {
+    if (cat && ["industrial", "premium", "agricola", "otros"].includes(cat)) {
       setActiveCategory(cat as ProductCategory);
     }
   }, [searchParams]);
