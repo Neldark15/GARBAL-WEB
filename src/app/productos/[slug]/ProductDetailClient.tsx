@@ -116,24 +116,16 @@ export default function ProductDetailClient({ product }: { product: Product }) {
                 </div>
               </div>
 
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transition-all"
-                >
-                  <FaWhatsapp className="w-5 h-5" />
-                  Cotizar por WhatsApp
-                </a>
-                <Link
-                  href="/contacto"
-                  className="flex-1 flex items-center justify-center gap-2 px-6 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all"
-                >
-                  Solicitar Muestra
-                </Link>
-              </div>
+              {/* CTA */}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full font-semibold transition-all w-full sm:w-auto"
+              >
+                <FaWhatsapp className="w-5 h-5" />
+                Cotizar por WhatsApp
+              </a>
             </motion.div>
           </div>
         </div>

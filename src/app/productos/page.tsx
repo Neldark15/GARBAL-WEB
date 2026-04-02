@@ -111,56 +111,124 @@ function ProductosContent() {
             </a>
           </div>
 
-          {/* Product Grid */}
+          {/* Product Grid - grouped by category when showing all */}
           <AnimatePresence mode="wait">
             <motion.div
               key={activeCategory + search}
-              className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
               initial="hidden"
               animate="visible"
               exit="exit"
               variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
             >
-              {filtered.map((product) => (
-                <motion.div key={product.id} variants={fadeUp} layout>
-                  <Link href={`/productos/${product.slug}`}>
-                    <div className="group glass-card rounded-2xl overflow-hidden card-tilt product-shimmer">
-                      <div className="relative h-72 img-zoom product-bg">
-                        <Image
-                          src={product.image}
-                          alt={product.name}
-                          fill
-                          quality={95}
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          className="object-contain p-4 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500"
-                        />
-                        <div className="shimmer-overlay absolute inset-0 z-10" />
-                        <div className="absolute top-3 left-3 z-20">
-                          <span className="text-[10px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-full shadow-sm">
-                            {categories.find((c) => c.id === product.category)?.name}
-                          </span>
+              {activeCategory === "all" && search === "" ? (
+                categories.map((cat, catIdx) => {
+                  const catProducts = filtered.filter((p) => p.category === cat.id);
+                  if (catProducts.length === 0) return null;
+                  return (
+                    <div key={cat.id}>
+                      {catIdx > 0 && (
+                        <div className="flex items-center gap-4 my-10">
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+                          <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider">{cat.name}</span>
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
                         </div>
-                      </div>
-                      <div className="p-5">
-                        <h3 className="font-heading font-bold text-secondary group-hover:text-primary transition-colors">
-                          {product.name}
-                        </h3>
-                        <p className="text-gray-500 text-sm mt-1 line-clamp-2">
-                          {product.shortDescription}
-                        </p>
-                        <div className="flex gap-2 mt-3">
-                          <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
-                            Caña: {product.specs.cana}
-                          </span>
-                          <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
-                            Suela: {product.specs.suela}
-                          </span>
+                      )}
+                      {catIdx === 0 && (
+                        <div className="flex items-center gap-4 mb-8">
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+                          <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider">{cat.name}</span>
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
                         </div>
+                      )}
+                      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {catProducts.map((product) => (
+                          <motion.div key={product.id} variants={fadeUp} layout>
+                            <Link href={`/productos/${product.slug}`}>
+                              <div className="group glass-card rounded-2xl overflow-hidden card-tilt product-shimmer">
+                                <div className="relative h-72 img-zoom product-bg">
+                                  <Image
+                                    src={product.image}
+                                    alt={product.name}
+                                    fill
+                                    quality={95}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-contain p-4 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500"
+                                  />
+                                  <div className="shimmer-overlay absolute inset-0 z-10" />
+                                  <div className="absolute top-3 left-3 z-20">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-full shadow-sm">
+                                      {cat.name}
+                                    </span>
+                                  </div>
+                                </div>
+                                <div className="p-5">
+                                  <h3 className="font-heading font-bold text-secondary group-hover:text-primary transition-colors">
+                                    {product.name}
+                                  </h3>
+                                  <p className="text-gray-500 text-sm mt-1 line-clamp-2">
+                                    {product.shortDescription}
+                                  </p>
+                                  <div className="flex gap-2 mt-3">
+                                    <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
+                                      Caña: {product.specs.cana}
+                                    </span>
+                                    <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
+                                      Suela: {product.specs.suela}
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </Link>
+                          </motion.div>
+                        ))}
                       </div>
                     </div>
-                  </Link>
-                </motion.div>
-              ))}
+                  );
+                })
+              ) : (
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {filtered.map((product) => (
+                    <motion.div key={product.id} variants={fadeUp} layout>
+                      <Link href={`/productos/${product.slug}`}>
+                        <div className="group glass-card rounded-2xl overflow-hidden card-tilt product-shimmer">
+                          <div className="relative h-72 img-zoom product-bg">
+                            <Image
+                              src={product.image}
+                              alt={product.name}
+                              fill
+                              quality={95}
+                              sizes="(max-width: 768px) 100vw, 50vw"
+                              className="object-contain p-4 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-500"
+                            />
+                            <div className="shimmer-overlay absolute inset-0 z-10" />
+                            <div className="absolute top-3 left-3 z-20">
+                              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-full shadow-sm">
+                                {categories.find((c) => c.id === product.category)?.name}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="p-5">
+                            <h3 className="font-heading font-bold text-secondary group-hover:text-primary transition-colors">
+                              {product.name}
+                            </h3>
+                            <p className="text-gray-500 text-sm mt-1 line-clamp-2">
+                              {product.shortDescription}
+                            </p>
+                            <div className="flex gap-2 mt-3">
+                              <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
+                                Caña: {product.specs.cana}
+                              </span>
+                              <span className="text-[11px] bg-gray-100 text-gray-500 px-2 py-0.5 rounded">
+                                Suela: {product.specs.suela}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
 

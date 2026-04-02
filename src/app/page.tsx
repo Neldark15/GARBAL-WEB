@@ -103,12 +103,11 @@ export default function Home() {
 
       {/* STATS */}
       <section className="py-16 bg-secondary">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-3 gap-8 text-center text-white">
           {[
             { target: 60, suffix: "+", label: "Años de experiencia" },
-            { target: 13, suffix: "", label: "Productos" },
-            { target: 5, suffix: "+", label: "Países" },
-            { target: 1962, suffix: "", label: "Fundada en" },
+            { target: 25, suffix: "+", label: "Estilos" },
+            { target: 10, suffix: "+", label: "Países" },
           ].map((stat, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
               <Counter target={stat.target} suffix={stat.suffix} />
@@ -227,14 +226,9 @@ export default function Home() {
         <motion.div className="max-w-4xl mx-auto px-4 text-center text-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">¿Listo para equipar a tu equipo?</h2>
           <p className="text-white/80 mb-8 text-lg">Contáctanos hoy y obtén una cotización personalizada para tu empresa o negocio.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contacto" className="px-8 py-4 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-all">
-              Solicitar Cotización
-            </Link>
-            <Link href="/distribuidores" className="px-8 py-4 border-2 border-white/30 text-white rounded-full font-semibold hover:border-white hover:bg-white/10 transition-all">
-              Ser Distribuidor
-            </Link>
-          </div>
+          <Link href="/contacto" className="inline-block px-8 py-4 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-all">
+            Solicitar Cotización
+          </Link>
         </motion.div>
       </section>
     </>

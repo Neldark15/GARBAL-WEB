@@ -30,7 +30,7 @@ export const categories: { id: ProductCategory; name: string; description: strin
   },
   {
     id: "otros",
-    name: "Otros Productos",
+    name: "Otros Estilos",
     description: "Calzado versátil para el día a día",
   },
 ];
@@ -78,7 +78,7 @@ export const products: Product[] = [
     description:
       "Bota blanca de caña PVC con suela de Nitrilo roja, resistente a aceites, grasas y solventes. Diseñada para industrias alimentarias, laboratorios y áreas sanitarias. Fácil de limpiar y desinfectar, cumple con estándares de higiene industrial.",
     shortDescription: "Caña PVC + suela Nitrilo: resistencia superior para uso sanitario",
-    specs: { cana: "PVC", suela: "Nitrilo", uso: "Sanitario / Alimentario / Petroquímico" },
+    specs: { cana: "PVC", suela: "Nitrilo", uso: "Sanitario / Alimentario" },
     image: "/images/products/industrial/bota-blanca-roja.png",
     featured: true,
   },
@@ -97,6 +97,22 @@ export const products: Product[] = [
       "/images/products/industrial/super-montana-industrial-3.png",
     ],
     featured: true,
+  },
+  {
+    id: "ind-06",
+    name: "Super Montana Industrial Beige",
+    slug: "super-montana-industrial-beige",
+    category: "industrial",
+    description:
+      "Bota industrial negra con suela beige de alta resistencia. Diseñada para entornos de trabajo exigentes donde se requiere tracción superior. La suela antideslizante garantiza seguridad en superficies húmedas o resbaladizas.",
+    shortDescription: "Bota negra con suela beige de alta tracción",
+    specs: { cana: "PVC", suela: "PVC", uso: "Industrial / Construcción" },
+    image: "/images/products/agricola/super-montana-beige.png",
+    gallery: [
+      "/images/products/agricola/super-montana-beige.png",
+      "/images/products/agricola/montana-beige.png",
+    ],
+    featured: false,
   },
   // Agricultural
   {
@@ -136,13 +152,11 @@ export const products: Product[] = [
     description:
       "La versatilidad de la línea Super Montana aplicada al sector agrícola. Protección total contra agua, lodo y materiales del campo con la calidad que caracteriza a Garbal.",
     shortDescription: "Línea Super Montana adaptada para el campo",
-    specs: { cana: "PVC", suela: "PVC", uso: "Agrícola / Multipropósito" },
-    image: "/images/products/agricola/super-montana-beige.png",
+    specs: { cana: "PVC", suela: "PVC", uso: "Agrícola" },
+    image: "/images/products/agricola/super-montana-agricola.png",
     gallery: [
-      "/images/products/agricola/super-montana-beige.png",
-      "/images/products/agricola/dakota-hq.png",
-      "/images/products/agricola/montana-beige.png",
       "/images/products/agricola/super-montana-agricola.png",
+      "/images/products/agricola/montana-beige.png",
     ],
     featured: false,
   },
