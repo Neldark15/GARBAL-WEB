@@ -160,6 +160,30 @@ export const products: Product[] = [
     ],
     featured: false,
   },
+  {
+    id: "agr-04",
+    name: "Burro",
+    slug: "burro",
+    category: "agricola",
+    description:
+      "Bota Burro de caña corta con cordones, fabricada en PVC con suela beige de alto agarre. Diseñada para trabajo pesado en campo, construcción y terrenos irregulares. Su diseño tipo botín brinda protección y comodidad en jornadas exigentes.",
+    shortDescription: "Botín con cordones para trabajo pesado y campo",
+    specs: { cana: "PVC", suela: "PVC", uso: "Agrícola / Trabajo Pesado" },
+    image: "/images/products/agricola/burro.png",
+    featured: false,
+  },
+  {
+    id: "agr-05",
+    name: "Mavinsa",
+    slug: "mavinsa",
+    category: "agricola",
+    description:
+      "Bota Mavinsa de caña alta totalmente negra, resistente y duradera. Ideal para ganadería, agricultura y trabajos en terrenos húmedos. Su suela con diseño antideslizante garantiza tracción en cualquier superficie.",
+    shortDescription: "Bota alta negra resistente para ganadería y campo",
+    specs: { cana: "PVC", suela: "PVC", uso: "Agrícola / Ganadería" },
+    image: "/images/products/agricola/mavinsa.png",
+    featured: false,
+  },
   // Other products
   {
     id: "otr-01",
