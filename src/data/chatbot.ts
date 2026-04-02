@@ -86,24 +86,6 @@ export const chatbotOptions: ChatOption[] = [
     ],
   },
   {
-    label: "🤝 Ser distribuidor",
-    value: "distribuidor",
-    response:
-      "¡Excelente! Distribuimos en Centroamérica, México, Estados Unidos y el Caribe. Visita nuestra sección de Distribuidores para más información y llena el formulario de solicitud.",
-    followUp: [
-      {
-        label: "Ir a Distribuidores",
-        value: "ir-distribuidores",
-        response: "Te llevo a la página de distribuidores.",
-      },
-      {
-        label: "Contactar por WhatsApp",
-        value: "whatsapp",
-        response: "Te conecto con nuestro equipo comercial por WhatsApp.",
-      },
-    ],
-  },
-  {
     label: "📍 Ubicación y horarios",
     value: "ubicacion",
     response:

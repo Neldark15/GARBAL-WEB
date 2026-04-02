@@ -19,7 +19,6 @@ const navLinks = [
       { href: "/productos", label: "Ver Todo" },
     ],
   },
-  { href: "/distribuidores", label: "Distribuidores" },
   { href: "/contacto", label: "Contacto" },
 ];
 

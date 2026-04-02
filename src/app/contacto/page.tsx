@@ -238,7 +238,6 @@ export default function ContactoPage() {
                       >
                         <option value="">Selecciona un asunto</option>
                         <option value="cotizacion">Cotización de productos</option>
-                        <option value="distribuidor">Quiero ser distribuidor</option>
                         <option value="soporte">Soporte al cliente</option>
                         <option value="otro">Otro</option>
                       </select>
