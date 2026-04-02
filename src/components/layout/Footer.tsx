@@ -58,7 +58,7 @@ export default function Footer() {
               {[
                 { href: "/productos?cat=industrial", label: "Botas Industriales" },
                 { href: "/productos?cat=agricola", label: "Botas Agrícolas" },
-                { href: "/productos?cat=otros", label: "Otros Productos" },
+                { href: "/productos?cat=otros", label: "Otros Estilos" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

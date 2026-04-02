@@ -270,17 +270,17 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      {/* Map */}
+      {/* Map - Ubicación Garbal, Santa Tecla */}
       <section id="mapa" className="h-[400px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.5!2d-89.28!3d13.59!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKm+24+1%2F2+carretera+al+Puerto+de+La+Libertad%2C+Zaragoza!5e0!3m2!1ses!2ssv!4v1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.2!2d-89.2865!3d13.6715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633067e22cfa75%3A0xf6fa26e4c1ee1e0!2sEnviar!5e0!3m2!1ses!2ssv!4v1"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Ubicación Garbal"
+          title="Ubicación Garbal - Santa Tecla, El Salvador"
         />
       </section>
     </>
