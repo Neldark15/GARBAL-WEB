@@ -250,6 +250,30 @@ export const products: Product[] = [
     image: "/images/products/otros/ester.png",
     featured: false,
   },
+  {
+    id: "otr-05",
+    name: "Sandra",
+    slug: "sandra",
+    category: "otros",
+    description:
+      "Calzado Sandra, diseñado para la mujer moderna que busca comodidad y estilo. Fabricado en PVC duradero con acabados elegantes para el uso diario.",
+    shortDescription: "Estilo y comodidad para el día a día",
+    specs: { cana: "PVC", suela: "PVC", uso: "Casual / Femenino" },
+    image: "/images/products/otros/sandra.png",
+    featured: false,
+  },
+  {
+    id: "otr-06",
+    name: "Ana",
+    slug: "ana",
+    category: "otros",
+    description:
+      "Calzado Ana, combinando diseño femenino con la resistencia del PVC Garbal. Ligero y cómodo, ideal para actividades cotidianas.",
+    shortDescription: "Diseño femenino ligero y resistente",
+    specs: { cana: "PVC", suela: "PVC", uso: "Casual / Femenino" },
+    image: "/images/products/otros/ana.png",
+    featured: false,
+  },
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
