@@ -113,7 +113,7 @@ export const products: Product[] = [
   },
   {
     id: "ind-05",
-    name: "Super Montana Industrial Amarilla",
+    name: "Super Montana Industrial",
     slug: "super-montana-industrial-amarilla-blanca",
     category: "industrial",
     description:
