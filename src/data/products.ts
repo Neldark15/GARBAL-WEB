@@ -93,9 +93,9 @@ export const products: Product[] = [
     slug: "super-montana-verde-roja",
     category: "premium",
     description:
-      "Bota premium de la línea Super Montana Industrial con caña verde y suela roja de alto rendimiento. Diseñada para entornos industriales que requieren máxima visibilidad y resistencia superior. Materiales especializados para condiciones exigentes.",
-    shortDescription: "Caña verde + suela roja de alto rendimiento industrial",
-    specs: { cana: "PVC", suela: "PVC", uso: "Industrial / Premium" },
+      "Bota premium de la línea Super Montana Industrial con caña y suela de Nitrilo. Resistente a aceites, grasas, solventes y productos químicos. Diseñada para entornos industriales que requieren máxima protección y durabilidad superior.",
+    shortDescription: "Caña y suela Nitrilo: máxima resistencia química",
+    specs: { cana: "Nitrilo", suela: "Nitrilo", uso: "Industrial / Premium" },
     image: "/images/products/industrial/super-montana-verde-roja.png",
     featured: false,
   },
@@ -106,8 +106,8 @@ export const products: Product[] = [
     category: "premium",
     description:
       "Bota premium de la línea Super Montana Industrial con caña blanca y suela azul. Ideal para industrias alimentarias, laboratorios y áreas sanitarias que requieren identificación visual del personal. Fácil de limpiar y desinfectar.",
-    shortDescription: "Caña blanca + suela azul para uso sanitario e industrial",
-    specs: { cana: "PVC", suela: "PVC", uso: "Sanitario / Industrial" },
+    shortDescription: "Caña y suela Nitrilo: resistencia química superior",
+    specs: { cana: "Nitrilo", suela: "Nitrilo", uso: "Sanitario / Industrial" },
     image: "/images/products/industrial/super-montana-blanca-azul.png",
     featured: false,
   },
@@ -236,18 +236,6 @@ export const products: Product[] = [
     shortDescription: "Diseño elegante y cómodo para el día a día",
     specs: { cana: "PVC", suela: "PVC", uso: "Casual / Femenino" },
     image: "/images/products/otros/valeria.png",
-    featured: false,
-  },
-  {
-    id: "otr-03",
-    name: "Cruzada",
-    slug: "cruzada",
-    category: "otros",
-    description:
-      "Calzado Cruzada con diseño versátil y duradero. Ideal para uso casual con la resistencia característica del PVC Garbal.",
-    shortDescription: "Versátil y duradero para uso casual",
-    specs: { cana: "PVC", suela: "PVC", uso: "Casual / Versátil" },
-    image: "/images/products/otros/cruzada.png",
     featured: false,
   },
   {
