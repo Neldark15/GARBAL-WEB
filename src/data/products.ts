@@ -77,7 +77,7 @@ export const products: Product[] = [
   },
   {
     id: "ind-03",
-    name: "Super Montana Industrial Blanca Roja",
+    name: "Super Montana Industrial",
     slug: "bota-sanitaria-blanca-roja",
     category: "premium",
     description:
