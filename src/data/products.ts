@@ -113,12 +113,12 @@ export const products: Product[] = [
   },
   {
     id: "ind-05",
-    name: "Bota Sanitaria Blanca Amarilla",
-    slug: "bota-sanitaria-blanca-amarilla",
+    name: "Super Montana Industrial Amarilla",
+    slug: "super-montana-industrial-amarilla-blanca",
     category: "industrial",
     description:
-      "Bota blanca con suela amarilla para entornos sanitarios y de procesamiento de alimentos. Material antibacteriano y resistente a químicos de limpieza. Ideal para laboratorios y áreas de higiene industrial.",
-    shortDescription: "Sanitaria con suela amarilla antideslizante",
+      "Bota Super Montana Industrial blanca con suela amarilla antideslizante. Diseñada para entornos sanitarios, procesamiento de alimentos y laboratorios. Material resistente a químicos de limpieza, fácil de desinfectar.",
+    shortDescription: "Bota blanca con suela amarilla antideslizante",
     specs: { cana: "PVC", suela: "PVC", uso: "Sanitario / Laboratorio" },
     image: "/images/products/industrial/super-montana-industrial-nitrelo.png",
     gallery: [
